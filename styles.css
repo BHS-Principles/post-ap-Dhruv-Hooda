@@ -1,6 +1,18 @@
 body *{
-    display: inline-block;
+    display: block;
     position: relative;
+}
+
+.horo {
+    display: inline-flex;
+}
+
+.vert {
+    display: block;
+}
+
+#finishLabel {
+    font-size: 60;
 }
 
 body {
@@ -15,6 +27,10 @@ body {
 
 button {
     color: blue;
+}
+
+.invis {
+    display: none;
 }
 
 div.card {

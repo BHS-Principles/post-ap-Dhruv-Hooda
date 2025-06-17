@@ -3,23 +3,27 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="target">
-            
-        </div>
-        
-        <div id="temp">
-            <div class="card" id="OG" style="background-position-x: 0.5%;">
-                card card
-            </div>    
+        <h1>Blackjack</h1>
+        <p>Welcome to the Blackjack game! Try to get as close to 21 as possible without going over.</p>
+        <b></b>
+        <div id="temp" class="invis">
+            <div class="card" id="OG" style="background-position-x: 0.5%;"></div>    
+            <div id="display" class="vert">
+                <h4 id="title"></h4>
+                <div id="target" class="horo"></div>
+                <label id="sumLabel">Card Total: 0</label>
+                <div class="horo">
+                    <button id="hit">Hit (another card)</button>
+                    <button id="stand">Stand (wait)</button>    
+                </div>
+            </div>
         </div>
 
-        <button id="start">
-            Click to deal a card
-        </button>
+        <div id="draw" class="horo"></div>
 
-        <button id="hit">Hit (another card)</button>
-        <button id="stand">Stand (wait)</button>
-        
+        <label id="finishLabel"></label>
+
+
         <script src="js.js"></script>
     </body>
 </html>
